@@ -5,7 +5,6 @@ trigger: none
 
 variables:
   resourceGroupName: 'rg-bicep-demo-0017'
-  resourceGroupName2: 'rg-bicep-demo-0018'
   location: 'westeurope'
   webAppName: 'bicep0017'
   templateFile: '01-bicep-webapp/webapp-linux.bicep'
@@ -35,6 +34,6 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
-      az deployment group create --resource-group $(resourceGroupName2) \
+      az deployment group create --resource-group $(resourceGroupName1) \
          --template-file $(templateFile) \
          --parameters webAppName=$(webAppName)
