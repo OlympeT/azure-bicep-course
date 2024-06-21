@@ -101,4 +101,3 @@ steps:
          --parameters webAppName=$(webAppName)
 ```
 
-CI/CD implemented in Azure DevOps Pipelines: https://dev.azure.com/houssemdellai/Azure-Bicep-Course
